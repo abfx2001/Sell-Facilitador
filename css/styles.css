@@ -1,0 +1,8 @@
+.bg-sell {
+    background-image: url('/img/background.png');
+}
+.btn-sell {
+    height: 150px;
+    width: 150px;
+    border-radius: 25px;
+}
