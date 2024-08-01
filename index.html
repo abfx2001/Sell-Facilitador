@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css"></link>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
     <!-- FONTS -->
@@ -19,49 +18,133 @@
     <div 
         class="w-full h-full bg-no-repeat bg-cover bg-center bg-fixed" 
         style="background-image: url('/img/background.png');">
-        <div class="h-screen">
-            <nav class="p-5 bg-[#162C44] bg-opacity-50 shadow md:flex md:items-center md:justify-between">
-                <div class="flex justify-around items-center ">
-                  <span class="text-2xl font-[Poppins] cursor-pointer">
-                    <a href="#">
-                        <img class="md:h-24 h-16 inline" src="/img/sell-logo.png">
-                    </a>
-                  </span>
-                  
-                  <span class="text-3xl cursor-pointer mx-2 md:hidden block">
-                    <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
-                  </span>
-                </div>
-            
-                <ul class="
-                        md:flex md:items-center 
-                        z-[1] md:z-auto md:static 
-                        absolute md:bg-transparent bg-[#162C44] w-full left-0 
-                        md:w-auto md:py-0 md:mt-0 mt-6 pb-4 md:pl-0 pl-7 
-                        md:opacity-100 opacity-0 top-[-400px] 
-                        transition-all ease-in duration-500">
-                  <li class="mx-4 my-6 md:my-0">
-                    <a href="#" class="text-xl hover:text-cyan-500 duration-500">HOME</a>
-                  </li>
-                  <li class="mx-4 my-6 md:my-0">
-                    <a href="#" class="text-xl hover:text-cyan-500 duration-500">SERVICE</a>
-                  </li>
-                  <li class="mx-4 my-6 md:my-0">
-                    <a href="#" class="text-xl hover:text-cyan-500 duration-500">ABOUT</a>
-                  </li>
-                  <li class="mx-4 my-6 md:my-0">
-                    <a href="#" class="text-xl hover:text-cyan-500 duration-500">CONTACT</a>
-                  </li>
-                  <li class="mx-4 my-6 md:my-0">
-                    <a href="#" class="text-xl hover:text-cyan-500 duration-500">BLOG'S</a>
-                  </li>
-            
-                  <button class="bg-cyan-400 text-white font-[Poppins] duration-500 px-6 py-2 mx-4 hover:bg-cyan-500 rounded ">
-                    Get started
-                  </button>
-                <h2 class=""></h2>
-                </ul>
-              </nav>
+        <div class="md:h-screen">
+          <nav class="p-5 bg-[#162C44] bg-opacity-30 md:flex md:items-center md:justify-between">
+            <div class="flex justify-around items-center ">
+              <span class="text-2xl font-[Poppins] cursor-pointer">
+                <a href="#">
+                  <img class="md:h-24 h-16 inline" src="/img/sell-logo.png">
+                </a>
+              </span>
+              <span class="text-3xl text-white cursor-pointer mx-2 md:hidden block">
+                <ion-icon class="h-14 w-14" name="menu" onclick="Menu(this)"></ion-icon>
+              </span>
+            </div>
+            <ul class="
+                    md:flex md:items-center 
+                    z-[1] md:z-auto md:static 
+                    absolute md:bg-transparent bg-[#162C44] w-full left-0 
+                    md:w-auto md:py-0 md:mt-0 mt-6 pb-4 md:pl-0 pl-7 
+                    md:opacity-100 opacity-0 top-[-400px] 
+                    transition-all ease-in duration-500">
+              <li class="mx-4 my-6 md:my-0 w-80">
+                <input 
+                  type="text" 
+                  id="user" 
+                  class="bg-slate-100 text-gray-900 text-lg text-center
+                          rounded-full focus:ring-indigo-700 focus:border-indigo-700 block 
+                          w-full p-2.5 h-14" 
+                  placeholder="Usuário" 
+                  required 
+                />
+              </li>
+              <li class="mx-4 my-6 md:my-0 w-80">
+                <input 
+                  type="password" 
+                  id="password" 
+                  class="bg-slate-100 text-gray-900 text-lg text-center
+                          rounded-full focus:ring-indigo-700 focus:border-indigo-700 block 
+                          w-full p-2.5 h-14" 
+                  placeholder="Senha" 
+                  required 
+                />
+              </li>
+              <button class="bg-green-600 text-black text-lg duration-500 px-6 py-2 mx-4 hover:bg-green-700 rounded-full h-12">
+                Conectar
+              </button>
+              <li class="mx-4 my-6 md:my-0">
+                <a href="#" class="text-md text-white hover:text-cyan-500 duration-500 flex">Cadastre-se</a>
+                <a href="#" class="text-md text-white hover:text-cyan-500 duration-500">Lembrar acesso</a>
+              </li>  
+              <div class="mt-5 ms-4 sm:hidden">
+                <span class="text-2xl font-[Poppins] cursor-pointer">
+                  <a href="">
+                    <svg class="h-12 w-12 text-white inline-flex me-4"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" /></svg>
+                  </a>
+                  <a href="">
+                    <svg class="h-12 w-12 text-white inline-flex me-2"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" />  <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" /></svg>
+                  </a>
+                  <a href="">
+                    <svg class="h-12 w-12 text-white inline-flex me-3"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg>
+                  </a>
+                  <a href="">
+                    <svg class="h-12 w-12 text-white inline-flex"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />  <rect x="2" y="9" width="4" height="12" />  <circle cx="4" cy="4" r="2" /></svg>
+                  </a>
+                </span>
+              </div>
+            </ul>
+            <div class="mx-3 hidden sm:block">
+              <span class="text-2xl font-[Poppins] cursor-pointer">
+                <a href="">
+                  <svg class="h-12 w-12 text-white inline-flex me-4"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" /></svg>
+                </a>
+                <a href="">
+                  <svg class="h-12 w-12 text-white inline-flex me-2"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" />  <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" /></svg>
+                </a>
+                <a href="">
+                  <svg class="h-12 w-12 text-white inline-flex me-3"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg>
+                </a>
+                <a href="">
+                  <svg class="h-12 w-12 text-white inline-flex"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />  <rect x="2" y="9" width="4" height="12" />  <circle cx="4" cy="4" r="2" /></svg>
+                </a>
+              </span>
+            </div>
+          </nav>
+
+          <div class="container mx-auto">
+            <div class="bg-[#162C44] bg-opacity-70 p-4 rounded-lg shadow-lg text-center md:mt-24 mt-5">
+              <h2 class="text-4xl font-bold mb-10 text-white">Facilitadores para você!</h2>
+              <p class="text-xl mb-2 text-white">Conheça nossos canais que facilitam sua rotina</p>
+            </div>
+
+            <div class="flex flex-col items-center justify-center md:flex-row md:justify-around">
+              <button onclick="window.open('https://www.selladm.com.br', '_blank')" 
+                      class="md:me-10 md:mt-14 mt-5 md:h-44 md:w-44 h-56 w-56 rounded-3xl bg-[#162C44]
+                             bg-opacity-70 shadow-lg hover:bg-opacity-95 text-white font-bold">                          
+                <svg class="flex mx-auto mb-3 md:h-24 h-36 md:w-24 w-36" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960"  fill="#FFFFFF"><path d="M450-201h60v-40h60q12.75 0 21.38-8.63Q600-258.25 600-271v-130q0-12.75-8.62-21.38Q582.75-431 570-431H420v-70h180v-60h-90v-40h-60v40h-60q-12.75 0-21.37 8.62Q360-543.75 360-531v130q0 12.75 8.63 21.37Q377.25-371 390-371h150v70H360v60h90v40ZM220-80q-24 0-42-18t-18-42v-680q0-24 18-42t42-18h361l219 219v521q0 24-18 42t-42 18H220Zm311-581v-159H220v680h520v-521H531ZM220-820v159-159 680-680Z"/></svg>
+                <span>Boleto</span>
+              </button>
+              <button onclick="window.open('https://www.selladm.com.br', '_blank')" 
+                      class="md:me-10 md:mt-14 mt-5 md:h-44 md:w-44 h-56 w-56 rounded-3xl bg-[#162C44]
+                             bg-opacity-70 shadow-lg hover:bg-opacity-95 text-white font-bold">                          
+                <svg class="flex mx-auto mb-1 md:h-24 h-36 md:w-24 w-36" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960"  fill="#FFFFFF"><path d="M400-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM80-160v-112q0-33 17-62t47-44q51-26 115-44t141-18h14q6 0 12 2-8 18-13.5 37.5T404-360h-4q-71 0-127.5 18T180-306q-9 5-14.5 14t-5.5 20v32h252q6 21 16 41.5t22 38.5H80Zm560 40-12-60q-12-5-22.5-10.5T584-204l-58 18-40-68 46-40q-2-14-2-26t2-26l-46-40 40-68 58 18q11-8 21.5-13.5T628-460l12-60h80l12 60q12 5 22.5 11t21.5 15l58-20 40 70-46 40q2 12 2 25t-2 25l46 40-40 68-58-18q-11 8-21.5 13.5T732-180l-12 60h-80Zm40-120q33 0 56.5-23.5T760-320q0-33-23.5-56.5T680-400q-33 0-56.5 23.5T600-320q0 33 23.5 56.5T680-240ZM400-560q33 0 56.5-23.5T480-640q0-33-23.5-56.5T400-720q-33 0-56.5 23.5T320-640q0 33 23.5 56.5T400-560Zm0-80Zm12 400Z"/></svg>
+                <span>Alteração de</span>
+                <span>Cadastro</span>
+              </button>
+              <button onclick="window.open('https://www.selladm.com.br', '_blank')" 
+                      class="md:me-10 md:mt-14 mt-5 md:h-44 md:w-44 h-56 w-56 rounded-3xl bg-[#162C44]
+                             bg-opacity-70 shadow-lg hover:bg-opacity-95 text-white font-bold">                          
+                <svg class="flex mx-auto mb-1 md:h-24 h-36 md:w-24 w-36" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960"  fill="#FFFFFF"><path d="M240-80q-50 0-85-35t-35-85v-120h120v-560h600v680q0 50-35 85t-85 35H240Zm480-80q17 0 28.5-11.5T760-200v-600H320v480h360v120q0 17 11.5 28.5T720-160ZM360-600v-80h360v80H360Zm0 120v-80h360v80H360ZM240-160h360v-80H200v40q0 17 11.5 28.5T240-160Zm0 0h-40 400-360Z"/></svg>
+                <span class="text-xl">CND</span>
+                <br>
+                <span class="text-xs">(termo de quitação)</span>
+              </button>
+              <button onclick="window.open('https://www.selladm.com.br', '_blank')" 
+                      class="md:me-10 md:mt-14 mt-5 md:h-44 md:w-44 h-56 w-56 rounded-3xl bg-[#162C44]
+                             bg-opacity-70 shadow-lg hover:bg-opacity-95 text-white font-bold">                          
+                <svg class="flex mx-auto mb-3 md:h-24 h-36 md:w-24 w-36" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960"  fill="#FFFFFF"><path d="M720-400v-120H600v-80h120v-120h80v120h120v80H800v120h-80Zm-360-80q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM40-160v-112q0-34 17.5-62.5T104-378q62-31 126-46.5T360-440q66 0 130 15.5T616-378q29 15 46.5 43.5T680-272v112H40Zm80-80h480v-32q0-11-5.5-20T580-306q-54-27-109-40.5T360-360q-56 0-111 13.5T140-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T440-640q0-33-23.5-56.5T360-720q-33 0-56.5 23.5T280-640q0 33 23.5 56.5T360-560Zm0-80Zm0 400Z"/></svg>
+                <span>Primeiro Acesso</span>
+              </button>
+              <button onclick="window.open('https://www.selladm.com.br', '_blank')" 
+                      class="md:me-10 md:mt-14 mt-5 md:h-44 md:w-44 h-56 w-56 rounded-3xl bg-[#162C44]
+                             bg-opacity-70 shadow-lg hover:bg-opacity-95 text-white font-bold">
+                             <svg class="flex mx-auto mb-3 md:h-24 h-36 md:w-24 w-36" xmlns="http://www.w3.org/2000/svg" viewBox="-20,50,300,150">
+                              <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M12.01172,2c-5.506,0 -9.98823,4.47838 -9.99023,9.98438c-0.001,1.76 0.45998,3.47819 1.33398,4.99219l-1.35547,5.02344l5.23242,-1.23633c1.459,0.796 3.10144,1.21384 4.77344,1.21484h0.00391c5.505,0 9.98528,-4.47937 9.98828,-9.98437c0.002,-2.669 -1.03588,-5.17841 -2.92187,-7.06641c-1.886,-1.887 -4.39245,-2.92673 -7.06445,-2.92773zM12.00977,4c2.136,0.001 4.14334,0.8338 5.65234,2.3418c1.509,1.51 2.33794,3.51639 2.33594,5.65039c-0.002,4.404 -3.58423,7.98633 -7.99023,7.98633c-1.333,-0.001 -2.65341,-0.3357 -3.81641,-0.9707l-0.67383,-0.36719l-0.74414,0.17578l-1.96875,0.46484l0.48047,-1.78516l0.2168,-0.80078l-0.41406,-0.71875c-0.698,-1.208 -1.06741,-2.58919 -1.06641,-3.99219c0.002,-4.402 3.58528,-7.98437 7.98828,-7.98437zM8.47656,7.375c-0.167,0 -0.43702,0.0625 -0.66602,0.3125c-0.229,0.249 -0.875,0.85208 -0.875,2.08008c0,1.228 0.89453,2.41503 1.01953,2.58203c0.124,0.166 1.72667,2.76563 4.26367,3.76563c2.108,0.831 2.53614,0.667 2.99414,0.625c0.458,-0.041 1.47755,-0.60255 1.68555,-1.18555c0.208,-0.583 0.20848,-1.0845 0.14648,-1.1875c-0.062,-0.104 -0.22852,-0.16602 -0.47852,-0.29102c-0.249,-0.125 -1.47608,-0.72755 -1.70508,-0.81055c-0.229,-0.083 -0.3965,-0.125 -0.5625,0.125c-0.166,0.25 -0.64306,0.81056 -0.78906,0.97656c-0.146,0.167 -0.29102,0.18945 -0.54102,0.06445c-0.25,-0.126 -1.05381,-0.39024 -2.00781,-1.24024c-0.742,-0.661 -1.24267,-1.47656 -1.38867,-1.72656c-0.145,-0.249 -0.01367,-0.38577 0.11133,-0.50977c0.112,-0.112 0.24805,-0.2915 0.37305,-0.4375c0.124,-0.146 0.167,-0.25002 0.25,-0.41602c0.083,-0.166 0.04051,-0.3125 -0.02149,-0.4375c-0.062,-0.125 -0.54753,-1.35756 -0.76953,-1.85156c-0.187,-0.415 -0.3845,-0.42464 -0.5625,-0.43164c-0.145,-0.006 -0.31056,-0.00586 -0.47656,-0.00586z"></path></g></g>
+                              </svg>                          
+                <span>Boleto</span>
+              </button>
+            </div>
+          </div>
         </div>
     </div>
     <div>
