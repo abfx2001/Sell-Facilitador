@@ -19,10 +19,10 @@
         class="w-full h-full bg-no-repeat bg-cover bg-center bg-fixed" 
         style="background-image: url('./img/background.png');">
         <div class="md:h-screen">
-          <nav class="p-5 bg-[#162C44] bg-opacity-30 md:flex md:items-center md:justify-between">
+          <nav class="p-4 bg-[#162C44] bg-opacity-30 md:flex md:items-center md:justify-between">
             <div class="flex justify-around items-center ">
               <span class="text-2xl font-[Poppins] cursor-pointer">
-                <a href="#">
+                <a href="https://www.selladm.com.br">
                   <img class="md:h-24 h-16 inline" src="./img/sell-logo.png">
                 </a>
               </span>
@@ -30,71 +30,53 @@
                 <ion-icon class="h-14 w-14" name="menu" onclick="Menu(this)"></ion-icon>
               </span>
             </div>
-            <ul class="
-                    md:flex md:items-center 
-                    z-[1] md:z-auto md:static 
-                    absolute md:bg-transparent bg-[#162C44] w-full left-0 
-                    md:w-auto md:py-0 md:mt-0 mt-6 pb-4 md:pl-0 pl-7 
-                    md:opacity-100 opacity-0 top-[-400px] 
-                    transition-all ease-in duration-500">
-              <li class="mx-4 my-6 md:my-0 2xl:w-80 xg:w-64">
-                <input 
-                  type="text" 
-                  id="user" 
-                  class="bg-slate-100 text-gray-900 text-lg text-center
-                          rounded-full focus:text-cyan-500 focus:text-cyan-500 block 
-                          w-full p-2.5 h-14" 
-                  placeholder="Usuário" 
-                  required 
-                />
-              </li>
-              <li class="mx-4 my-6 md:my-0 2xl:w-80 xg:w-64">
-                <input 
-                  type="password" 
-                  id="password" 
-                  class="bg-slate-100 text-gray-900 text-lg text-center
-                          rounded-full focus:text-cyan-500 focus:text-cyan-500 block 
-                          w-full p-2.5 h-14" 
-                  placeholder="Senha" 
-                  required 
-                />
-              </li>
-              <button class="bg-green-600 text-black text-lg duration-500 px-6 py-2 mx-4 hover:bg-green-700 rounded-full h-12">
-                Conectar
-              </button>
+            <ul class="md:flex md:items-center z-[1] md:z-auto md:static absolute md:bg-transparent bg-[#162C44] w-full left-0 md:w-auto md:py-0 md:mt-0 mt-6 pb-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+              <form class="md:flex md:items-center" action="https://validador.webware.com.br" method="post">
+                <input type="hidden" name="a" value="14804150">
+                <input type="hidden" name="urlErro" value="https://www.webware.com.br/bin/administradora/default.asp?adm=14804150&amp;msg=ERRO">
+                <li class="mx-4 my-6 md:my-0 2xl:w-80 xg:w-64">
+                  <input name="mem" type="text" id="user" class="bg-slate-100 text-gray-900 text-lg text-center rounded-full focus:text-cyan-500 focus:text-cyan-500 block w-full p-2.5 h-14" placeholder="Usuário" required/>
+                </li>
+                <li class="mx-4 my-6 md:my-0 2xl:w-80 xg:w-64">
+                  <input name="pass" type="password" id="password" class="bg-slate-100 text-gray-900 text-lg text-center rounded-full focus:text-cyan-500 focus:text-cyan-500 block w-full p-2.5 h-14" placeholder="Senha" required/>
+                </li>
+                <button type="submit" name="button" class="bg-green-600 text-black text-lg duration-500 px-6 py-2 mx-4 hover:bg-green-700 rounded-full h-12">
+                  Conectar
+                </button>
+              </form>
               <li class="mx-4 my-6 md:my-0">
-                <a href="#" class="text-md text-white hover:text-cyan-500 duration-500 flex">Cadastre-se</a>
-                <a href="#" class="text-md text-white hover:text-cyan-500 duration-500">Lembrar acesso</a>
+                <a href="https://www.webware.com.br/bin/administradora/cadastro.asp?adm=14804150" class="text-md text-white hover:text-cyan-500 duration-500 flex">Cadastre-se</a>
+                <a href="https://www.webware.com.br/bin/administradora/lembrarsenha.asp?adm=14804150" class="text-md text-white hover:text-cyan-500 duration-500">Lembrar acesso</a>
               </li>  
               <div class="mt-5 ms-4 sm:hidden">
                 <span class="text-2xl font-[Poppins] cursor-pointer">
-                  <a href="">
+                  <a href="https://www.instagram.com/selladministradora">
                     <svg class="h-12 w-12 text-white inline-flex me-4"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" /></svg>
                   </a>
-                  <a href="">
+                  <a href="https://www.youtube.com/@selladministradora">
                     <svg class="h-12 w-12 text-white inline-flex me-2"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" />  <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" /></svg>
                   </a>
-                  <a href="">
+                  <a href="https://www.facebook.com/selladministradora">
                     <svg class="h-12 w-12 text-white inline-flex me-3"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg>
                   </a>
-                  <a href="">
+                  <a href="https://www.linkedin.com/company/selladministradora/mycompany/">
                     <svg class="h-12 w-12 text-white inline-flex"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />  <rect x="2" y="9" width="4" height="12" />  <circle cx="4" cy="4" r="2" /></svg>
                   </a>
                 </span>
               </div>
             </ul>
-            <div class="mx-3 hidden sm:block">
+            <div class="hidden sm:block">
               <span class="text-2xl font-[Poppins] cursor-pointer">
-                <a href="">
+                <a href="https://www.instagram.com/selladministradora">
                   <svg class="h-12 w-12 text-white inline-flex me-4"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" /></svg>
                 </a>
-                <a href="">
+                <a href="https://www.youtube.com/@selladministradora">
                   <svg class="h-12 w-12 text-white inline-flex me-2"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" />  <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" /></svg>
                 </a>
-                <a href="">
+                <a href="https://www.facebook.com/selladministradora">
                   <svg class="h-12 w-12 text-white inline-flex me-3"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg>
                 </a>
-                <a href="">
+                <a href="https://www.linkedin.com/company/selladministradora/mycompany/">
                   <svg class="h-12 w-12 text-white inline-flex"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />  <rect x="2" y="9" width="4" height="12" />  <circle cx="4" cy="4" r="2" /></svg>
                 </a>
               </span>
@@ -108,34 +90,36 @@
             </div>
 
             <div class="flex flex-col items-center justify-center md:flex-row md:justify-around">
-              <button onclick="window.open('https://www.selladm.com.br', '_blank')" 
+              <button onclick="window.open('https://selladm.dyndns.ws/', '_blank')" 
                       class="md:me-10 md:mt-14 mt-5 md:h-44 md:w-44 h-56 w-56 rounded-3xl bg-[#162C44]
                              bg-opacity-70 shadow-lg hover:bg-opacity-95 text-white font-bold">                          
-                <svg class="flex mx-auto mb-3 md:h-24 h-36 md:w-24 w-36" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960"  fill="#FFFFFF"><path d="M450-201h60v-40h60q12.75 0 21.38-8.63Q600-258.25 600-271v-130q0-12.75-8.62-21.38Q582.75-431 570-431H420v-70h180v-60h-90v-40h-60v40h-60q-12.75 0-21.37 8.62Q360-543.75 360-531v130q0 12.75 8.63 21.37Q377.25-371 390-371h150v70H360v60h90v40ZM220-80q-24 0-42-18t-18-42v-680q0-24 18-42t42-18h361l219 219v521q0 24-18 42t-42 18H220Zm311-581v-159H220v680h520v-521H531ZM220-820v159-159 680-680Z"/></svg>
+                <svg class="flex mx-auto mb-3 md:h-24 h-36 md:w-24 w-36" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" fill="#FFFFFF"><path d="M14 2.2C22.5-1.7 32.5-.3 39.6 5.8L80 40.4 120.4 5.8c9-7.7 22.3-7.7 31.2 0L192 40.4 232.4 5.8c9-7.7 22.3-7.7 31.2 0L304 40.4 344.4 5.8c7.1-6.1 17.1-7.5 25.6-3.6s14 12.4 14 21.8l0 464c0 9.4-5.5 17.9-14 21.8s-18.5 2.5-25.6-3.6L304 471.6l-40.4 34.6c-9 7.7-22.3 7.7-31.2 0L192 471.6l-40.4 34.6c-9 7.7-22.3 7.7-31.2 0L80 471.6 39.6 506.2c-7.1 6.1-17.1 7.5-25.6 3.6S0 497.4 0 488L0 24C0 14.6 5.5 6.1 14 2.2zM96 144c-8.8 0-16 7.2-16 16s7.2 16 16 16l192 0c8.8 0 16-7.2 16-16s-7.2-16-16-16L96 144zM80 352c0 8.8 7.2 16 16 16l192 0c8.8 0 16-7.2 16-16s-7.2-16-16-16L96 336c-8.8 0-16 7.2-16 16zM96 240c-8.8 0-16 7.2-16 16s7.2 16 16 16l192 0c8.8 0 16-7.2 16-16s-7.2-16-16-16L96 240z"/></svg>
                 <span>Boleto</span>
               </button>
-              <button onclick="window.open('https://www.selladm.com.br', '_blank')" 
+              <button onclick="window.open('https://selladm.com.br/atualizacadastro/', '_blank')" 
                       class="md:me-10 md:mt-14 mt-5 md:h-44 md:w-44 h-56 w-56 rounded-3xl bg-[#162C44]
                              bg-opacity-70 shadow-lg hover:bg-opacity-95 text-white font-bold">                          
-                <svg class="flex mx-auto mb-1 md:h-24 h-36 md:w-24 w-36" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960"  fill="#FFFFFF"><path d="M400-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM80-160v-112q0-33 17-62t47-44q51-26 115-44t141-18h14q6 0 12 2-8 18-13.5 37.5T404-360h-4q-71 0-127.5 18T180-306q-9 5-14.5 14t-5.5 20v32h252q6 21 16 41.5t22 38.5H80Zm560 40-12-60q-12-5-22.5-10.5T584-204l-58 18-40-68 46-40q-2-14-2-26t2-26l-46-40 40-68 58 18q11-8 21.5-13.5T628-460l12-60h80l12 60q12 5 22.5 11t21.5 15l58-20 40 70-46 40q2 12 2 25t-2 25l46 40-40 68-58-18q-11 8-21.5 13.5T732-180l-12 60h-80Zm40-120q33 0 56.5-23.5T760-320q0-33-23.5-56.5T680-400q-33 0-56.5 23.5T600-320q0 33 23.5 56.5T680-240ZM400-560q33 0 56.5-23.5T480-640q0-33-23.5-56.5T400-720q-33 0-56.5 23.5T320-640q0 33 23.5 56.5T400-560Zm0-80Zm12 400Z"/></svg>
+                <svg class="flex mx-auto mb-1 md:h-24 h-36 md:w-24 w-36" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960"  fill="#FFFFFF"><path d="M400-485q-66 0-108-42t-42-108q0-66 42-108t108-42q66 0 108 42t42 108q0 66-42 108t-108 42ZM80-224v-33.97Q80-293 97.5-322t50.5-44q58-26 119.34-42 61.35-16 125.66-16 12.75 0 21.38 8.5Q423-407 423-394.18q0 12.83-8.62 21.5Q405.75-364 393-364q-58 0-113.5 14T172-310q-14 8-23 21.66-9 13.65-9 30.34v34h254q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H140q-24.75 0-42.37-17.63Q80-199.25 80-224Zm584 81-7-43q-17-5-34.5-14.5T593-222l-38 8q-8 2-15.03-1.1-7.03-3.09-10.97-9.9l-5.87-9.69Q518-243 519.5-251q1.5-8 7.5-14l33-31q-2-9-2-25t2-25l-33-31q-6-5-7.5-13.5T523-406l6-12q4-7 10.5-9.5t14.5-.5l39 8q12-12 29.5-21.5T657-456l7-43q2.05-10.39 9.24-16.69Q680.42-522 690-522h8q9.58 0 16.76 6.47 7.19 6.47 9.24 16.53l7 43q17 5 34.5 14.5T795-420l38-8q8-2 15.09.95 7.09 2.96 10.91 10.05l5.87 9.69Q870-399 868.5-391q-1.5 8-7.5 14l-33 31q2 9 2 25t-2 25l33 31q6 5 7.5 13.5T865-236l-6 12q-4 7-10.5 9.5t-14.5.5l-39-8q-12 12-29.5 21.5T731-186l-7 43q-2.05 10.39-9.24 16.69Q707.58-120 698-120h-8q-9.58 0-16.76-6.47-7.19-6.47-9.24-16.53Zm30-98q36 0 58-22t22-58q0-36-22-58t-58-22q-36 0-58 22t-22 58q0 36 22 58t58 22ZM400-545q39 0 64.5-25.5T490-635q0-39-25.5-64.5T400-725q-39 0-64.5 25.5T310-635q0 39 25.5 64.5T400-545Zm0-90Zm9 411Z"path d="M397.79-492.43q-72.59 0-118.15-45.56-45.55-45.56-45.55-118.15 0-72.58 45.55-118.07 45.56-45.49 118.15-45.49t118.31 45.46q45.73 45.46 45.73 118.22 0 72.47-45.73 118.03-45.72 45.56-118.31 45.56ZM61.28-211.3v-33.58q0-39.47 20-71.45 20-31.98 54.24-47.97 59.2-26.69 121.86-43.85 62.67-17.15 130.14-17.15 15.75 0 27.45 11.33 11.7 11.34 11.7 27.12 0 17.01-11.49 28.17-11.5 11.16-27.9 11.16-57.47 0-112.52 13.98-55.06 13.99-105.61 39.42-14.32 7.49-22.44 21.44-8.12 13.94-8.12 28.72v32.66h249.93q16.4 0 27.78 11.59 11.37 11.6 11.37 27.73 0 16.05-11.37 27.01Q404.92-134 388.52-134H138.59q-32.44 0-54.87-22.39-22.44-22.39-22.44-54.91Zm602.31 92.47-6.76-42.28q-15.24-3.76-30.74-12.76-15.5-9-26.5-19.48l-35.52 8q-11 2-20.15-1.71-9.16-3.72-14.65-12.84l-7-12.84q-6.97-9.13-5.2-20.37 1.76-11.24 10.23-19.24l30.53-29.76q-1.72-5.84-1.6-20.42.12-14.58 1.6-21.3l-30.76-30.28q-7.99-6.7-9.5-17.78-1.5-11.09 4.71-20.69l6.82-13.71q4.72-9.47 13.84-12.41 9.13-2.93 19.89-1.17l36.76 7q11-9.24 26.41-18.08 15.41-8.85 30.83-14.68l6.76-41.28q1.57-12.63 11.32-20.56 9.74-7.92 22.74-7.92h10.53q11.51 0 21.78 8.55 10.27 8.56 12.39 20.69l6.08 40.48q14.16 5.56 30.4 14.54 16.25 8.97 27.25 18.26l36.03-7q10-1.76 19.72 1.85 9.72 3.6 14.71 12.78l6.92 11.85q6.17 10.28 4.79 21.14-1.38 10.86-9.62 17.86l-31.76 30.52q2.96 7.88 2.72 21.44-.24 13.56-2.72 20.32l31.68 29.69q7.56 8.07 9.06 19.19 1.5 11.12-3.69 19.36l-7.57 14.52q-5.24 8.76-14.65 12.38-9.4 3.62-19.59.62l-36-7q-11 10.48-27.26 18.98t-30.5 13.26l-6 40.52q-2.34 13.69-12.52 21.34-10.17 7.66-21.47 7.66h-12.02q-10.89 0-21.05-7.47-10.16-7.48-11.7-19.77Zm39.06-103.43q36.72 0 58.63-22.07 21.92-22.06 21.92-58.06t-22.09-58.78q-22.1-22.79-58.83-22.79-36.74 0-58.64 22.98-21.9 22.97-21.9 58.8 0 36.12 22.09 58.02 22.09 21.9 58.82 21.9ZM397.91-569.74q37.09 0 61.73-24.6 24.64-24.61 24.64-61.72 0-37.2-24.59-61.89-24.59-24.68-61.8-24.68-37.22 0-61.86 24.69-24.64 24.7-24.64 61.76 0 37.17 24.57 61.81 24.56 24.63 61.95 24.63Zm.05-86.33Zm9.28 444.77Z"/></svg>
                 <span>Alteração de</span>
                 <span>Cadastro</span>
               </button>
-              <button onclick="window.open('https://www.selladm.com.br', '_blank')" 
-                      class="md:me-10 md:mt-14 mt-5 md:h-44 md:w-44 h-56 w-56 rounded-3xl bg-[#162C44]
-                             bg-opacity-70 shadow-lg hover:bg-opacity-95 text-white font-bold">                          
+              <!--
+                <button onclick="window.open('https://www.selladm.com.br', '_blank')" 
+                class="md:me-10 md:mt-14 mt-5 md:h-44 md:w-44 h-56 w-56 rounded-3xl bg-[#162C44]
+                bg-opacity-70 shadow-lg hover:bg-opacity-95 text-white font-bold">                          
                 <svg class="flex mx-auto mb-1 md:h-24 h-36 md:w-24 w-36" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960"  fill="#FFFFFF"><path d="M240-80q-50 0-85-35t-35-85v-120h120v-560h600v680q0 50-35 85t-85 35H240Zm480-80q17 0 28.5-11.5T760-200v-600H320v480h360v120q0 17 11.5 28.5T720-160ZM360-600v-80h360v80H360Zm0 120v-80h360v80H360ZM240-160h360v-80H200v40q0 17 11.5 28.5T240-160Zm0 0h-40 400-360Z"/></svg>
                 <span class="text-xl">CND</span>
                 <br>
                 <span class="text-xs">(termo de quitação)</span>
               </button>
-              <button onclick="window.open('https://www.selladm.com.br', '_blank')" 
+              -->
+              <button onclick="window.open('https://www.webware.com.br/bin/administradora/cadastro.asp?adm=14804150', '_blank')" 
                       class="md:me-10 md:mt-14 mt-5 md:h-44 md:w-44 h-56 w-56 rounded-3xl bg-[#162C44]
                              bg-opacity-70 shadow-lg hover:bg-opacity-95 text-white font-bold">                          
-                <svg class="flex mx-auto mb-3 md:h-24 h-36 md:w-24 w-36" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960"  fill="#FFFFFF"><path d="M720-400v-120H600v-80h120v-120h80v120h120v80H800v120h-80Zm-360-80q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM40-160v-112q0-34 17.5-62.5T104-378q62-31 126-46.5T360-440q66 0 130 15.5T616-378q29 15 46.5 43.5T680-272v112H40Zm80-80h480v-32q0-11-5.5-20T580-306q-54-27-109-40.5T360-360q-56 0-111 13.5T140-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T440-640q0-33-23.5-56.5T360-720q-33 0-56.5 23.5T280-640q0 33 23.5 56.5T360-560Zm0-80Zm0 400Z"/></svg>
+                <svg class="flex mx-auto mb-3 md:h-24 h-36 md:w-24 w-36" xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960"  fill="#FFFFFF"><path d="M733.59-534.17h-93.81q-14.77 0-25.15-10.56-10.37-10.55-10.37-25.71 0-15.35 10.21-25.56 10.2-10.22 25.31-10.22h93.81v-93.56q0-14.57 10.25-25.05 10.25-10.47 25.19-10.47 14.94 0 25.77 10.2 10.83 10.21 10.83 25.32v93.56h92.57q14.99 0 25.75 10.44 10.77 10.44 10.77 25.46 0 15.35-10.6 25.75-10.59 10.4-25.92 10.4h-92.57v92.8q0 15.55-10.81 26.03-10.82 10.49-25.89 10.49-15.18 0-25.26-10.49-10.08-10.48-10.08-26.03v-92.8Zm-373.12 45.74q-72.75 0-118.18-45.56-45.44-45.56-45.44-118.15 0-72.58 45.4-118.07 45.4-45.49 118.14-45.49 72.75 0 118.35 45.46 45.61 45.46 45.61 118.22 0 72.47-45.57 118.03t-118.31 45.56ZM23.8-207.3v-33.59q0-39.95 19.15-71.03T98.2-358.3q76.76-35 137.85-48.88 61.09-13.89 124.15-13.89 63.52 0 124.28 14T622-358.3q36.1 16.03 55.74 46.62 19.65 30.58 19.65 70.79v33.59q0 32.52-22.5 54.91Q652.38-130 619.85-130H101.11q-32.19 0-54.75-22.39Q23.8-174.78 23.8-207.3Zm77.31 0h518.74v-32.42q0-15.85-8.17-29.78-8.18-13.93-22.09-19.72-70.5-32.5-120.93-43.4-50.42-10.9-108.42-10.9-57.52 0-108.45 10.9-50.92 10.9-120.38 43.39-14.44 5.79-22.37 19.72-7.93 13.93-7.93 29.79v32.42Zm259.36-358.44q37.29 0 61.81-24.6 24.52-24.61 24.52-61.72 0-37.2-24.51-61.89-24.51-24.68-61.68-24.68-37.18 0-61.82 24.69-24.64 24.7-24.64 61.76 0 37.17 24.61 61.81 24.6 24.63 61.71 24.63Zm.01-86.33Zm0 444.77Z"/></svg>
                 <span>Primeiro Acesso</span>
               </button>
-              <button onclick="window.open('https://www.selladm.com.br', '_blank')" 
+              <button onclick="window.open('https://api.whatsapp.com/send/?phone=551137960203&text&type=phone_number&app_absent=0', '_blank')" 
                       class="md:mb-0 mb-10 me-0 md:mt-14 mt-5 md:h-44 md:w-44 h-56 w-56 rounded-3xl bg-[#162C44]
                              bg-opacity-70 shadow-lg hover:bg-opacity-95 text-white font-bold">
                              <svg class="flex mx-auto mb-3 md:h-24 h-36 md:w-24 w-36" xmlns="http://www.w3.org/2000/svg" viewBox="-20,50,300,150">
